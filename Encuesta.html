@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encuesta para fans de The Beatles">
+    <title>Encuesta</title>
+    <link rel="icon" type="image/png" href="imagenes/logo.png">
+</head>
+
+<body bgcolor="#D8D5C2" text="#292D24"
+      link="#9B481F" vlink="#65533C" alink="#E66B29">
+
+    <table width="1080" align="center" border="1"
+           cellpadding="18" cellspacing="0" bgcolor="#F5F0DC">
+
+        <colgroup span="12" width="90"></colgroup>
+
+        <tr>
+            <td colspan="12" bgcolor="#193A2B" align="center">
+
+                <header id="arriba">
+
+                    <font color="#E8752F">
+                        <h1>THE BEATLES</h1>
+                    </font>
+
+                    <font color="#F3EAD1">
+                        <p>Encuesta</p>
+                    </font>
+
+                </header>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="12" align="center" bgcolor="#D99A59">
+
+                <nav aria-label="Menú principal">
+
+                    <a href="index.html">
+                        Inicio
+                    </a>
+
+                    &nbsp; | &nbsp;
+
+                    <a href="Please Please Me.html">
+                        Please Please Me (1963)
+                    </a>
+
+                    &nbsp; | &nbsp;
+
+                    <a href="Sgt Pepper.html">
+                        Sgt. Pepper (1967)
+                    </a>
+
+                    &nbsp; | &nbsp;
+
+                    <a href="Abbey Road.html">
+                        Abbey Road (1969)
+                    </a>
+
+                    &nbsp; | &nbsp;
+
+                    <a href="Encuesta.html" aria-current="page">
+                        Encuesta
+                    </a>
+
+                </nav>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="8" valign="top" bgcolor="#F5F0DC">
+
+                <main id="contenido">
+
+                    <h2>
+                        <font color="#22533D">
+                            Tu espacio fan de The Beatles
+                        </font>
+                    </h2>
+
+                    <section>
+
+                        <h3>
+                            <font color="#A44B23">
+                                Cuéntanos tus preferencias
+                            </font>
+                        </h3>
+
+                        <p>
+                            Bienvenido a la zona fan de The Beatles.
+                            Completa esta encuesta para compartir
+                            tus gustos musicales y descubrir
+                            cuánto te gusta esta legendaria banda.
+                        </p>
+
+                        <p>
+                            Este formulario es una práctica académica.
+                            Utiliza datos de ejemplo.
+                        </p>
+
+                        <form action="resultado.html" method="get">
+
+                            <fieldset>
+
+                                <legend>
+                                    <font color="#22533D">
+                                        <b>Tu perfil de fan</b>
+                                    </font>
+                                </legend>
+
+                                <p>
+                                    <label for="nombre">
+                                        Nombre o apodo:
+                                    </label>
+                                    <br>
+
+                                    <input id="nombre" name="nombre"
+                                           type="text" minlength="2"
+                                           maxlength="40"
+                                           placeholder="Tu apodo"
+                                           required>
+                                </p>
+
+                                <p>
+                                    <label for="correo">
+                                        Correo de ejemplo:
+                                    </label>
+                                    <br>
+
+                                    <input id="correo" name="correo"
+                                           type="email"
+                                           placeholder="beatlefan@example.com"
+                                           required>
+                                </p>
+
+                            </fieldset>
+
+                            <br>
+
+                            <fieldset>
+
+                                <legend>
+                                    <font color="#22533D">
+                                        <b>Tus favoritos de The Beatles</b>
+                                    </font>
+                                </legend>
+
+                                <p>
+                                    <label for="album">
+                                        ¿Cuál es tu álbum favorito?
+                                    </label>
+                                    <br>
+
+                                    <select id="album" name="album" required>
+                                        <option value="">
+                                            Elige una opción
+                                        </option>
+
+                                        <option value="Please Please Me">
+                                            Please Please Me (1963)
+                                        </option>
+
+                                        <option value="Rubber Soul">
+                                            Rubber Soul (1965)
+                                        </option>
+
+                                        <option value="Sgt Pepper">
+                                            Sgt. Pepper (1967)
+                                        </option>
+
+                                        <option value="Abbey Road">
+                                            Abbey Road (1969)
+                                        </option>
+
+                                        <option value="Todos">
+                                            Todos los álbumes
+                                        </option>
+                                    </select>
+                                </p>
+
+                                <p>
+                                    ¿Qué estilo musical prefieres?
+                                    <br>
+
+                                    <input id="rock" type="radio"
+                                           name="sonido" value="rock"
+                                           required>
+                                    <label for="rock">
+                                        Rock and roll
+                                    </label>
+                                    <br>
+
+                                    <input id="psicodelico" type="radio"
+                                           name="sonido" value="psicodelico">
+                                    <label for="psicodelico">
+                                        Rock psicodélico
+                                    </label>
+                                    <br>
+
+                                    <input id="baladas" type="radio"
+                                           name="sonido" value="baladas">
+                                    <label for="baladas">
+                                        Baladas románticas
+                                    </label>
+                                    <br>
+
+                                    <input id="acustico" type="radio"
+                                           name="sonido" value="acustico">
+                                    <label for="acustico">
+                                        Rock acústico
+                                    </label>
+                                </p>
+
+                                <p>
+                                    ¿Quién es tu Beatle favorito?
+                                    <br>
+
+                                    <input id="john" type="radio"
+                                           name="integrante" value="John Lennon">
+                                    <label for="john">
+                                        John Lennon
+                                    </label>
+                                    <br>
+
+                                    <input id="paul" type="radio"
+                                           name="integrante" value="Paul McCartney">
+                                    <label for="paul">
+                                        Paul McCartney
+                                    </label>
+                                    <br>
+
+                                    <input id="george" type="radio"
+                                           name="integrante" value="George Harrison">
+                                    <label for="george">
+                                        George Harrison
+                                    </label>
+                                    <br>
+
+                                    <input id="ringo" type="radio"
+                                           name="integrante" value="Ringo Starr">
+                                    <label for="ringo">
+                                        Ringo Starr
+                                    </label>
+                                </p>
+
+                                <p>
+                                    ¿Qué contenido te interesa?
+                                    <br>
+
+                                    <input id="videos" name="interes"
+                                           value="videos" type="checkbox">
+                                    <label for="videos">
+                                        Videoclips y conciertos
+                                    </label>
+                                    <br>
+
+                                    <input id="musica" name="interes"
+                                           value="musica" type="checkbox">
+                                    <label for="musica">
+                                        Álbumes y canciones
+                                    </label>
+                                    <br>
+
+                                    <input id="historia" name="interes"
+                                           value="historia" type="checkbox">
+                                    <label for="historia">
+                                        Historia de la banda
+                                    </label>
+                                    <br>
+
+                                    <input id="curiosidades" name="interes"
+                                           value="curiosidades" type="checkbox">
+                                    <label for="curiosidades">
+                                        Datos curiosos
+                                    </label>
+                                </p>
+
+                                <p>
+                                    <label for="cancion">
+                                        ¿Cuál es tu canción favorita?
+                                    </label>
+                                    <br>
+
+                                    <input id="cancion" name="cancion"
+                                           list="canciones"
+                                           placeholder="Elige una canción">
+
+                                    <datalist id="canciones">
+                                        <option value="Yesterday">
+                                        <option value="In My Life">
+                                        <option value="Michelle">
+                                        <option value="Norwegian Wood">
+                                        <option value="Come Together">
+                                        <option value="Here Comes the Sun">
+                                        <option value="Something">
+                                        <option value="Hey Jude">
+                                        <option value="Let It Be">
+                                        <option value="A Day in the Life">
+                                    </datalist>
+                                </p>
+
+                                <p>
+                                    <label for="comentario">
+                                        ¿Por qué te gusta la música
+                                        de The Beatles?
+                                    </label>
+                                    <br>
+
+                                    <textarea id="comentario"
+                                              name="comentario"
+                                              rows="5"
+                                              cols="48"
+                                              maxlength="500"
+                                              placeholder="Escribe tu opinión..."></textarea>
+                                </p>
+
+                            </fieldset>
+
+                            <p>
+                                <button type="submit">
+                                    Terminar práctica
+                                </button>
+
+                                <button type="reset">
+                                    Limpiar campos
+                                </button>
+                            </p>
+
+                        </form>
+
+                    </section>
+
+                </main>
+
+            </td>
+
+            <td colspan="4" valign="top" bgcolor="#CAD6BB">
+
+                <aside>
+
+                    <h2>
+                        <font color="#22533D">
+                            Para explorar
+                        </font>
+                    </h2>
+
+                    <h3>
+                        <font color="#A44B23">
+                            Antes de terminar
+                        </font>
+                    </h3>
+
+                    <p>
+                        Completa tu apodo, un correo de ejemplo,
+                        tu álbum favorito y el estilo musical
+                        que más te gusta.
+                    </p>
+
+                    <p>
+                        También puedes elegir a tu integrante
+                        favorito y compartir qué canciones
+                        de The Beatles prefieres.
+                    </p>
+
+                    <p>
+                        El navegador comprobará los campos
+                        obligatorios antes de abrir
+                        la siguiente página.
+                    </p>
+
+                    <hr>
+
+                    <h3>
+                        <font color="#A44B23">
+                            Sobre Rubber Soul
+                        </font>
+                    </h3>
+
+                    <p align="justify">
+                        Rubber Soul fue publicado el
+                        3 de diciembre de 1965 y representa
+                        una etapa importante en la evolución
+                        musical de The Beatles.
+                    </p>
+
+                    <p align="justify">
+                        Su portada destaca por sus tonos verdes
+                        y letras anaranjadas, que inspiraron
+                        los colores de esta página.
+                    </p>
+
+                    <hr>
+
+                    <h3>
+                        <font color="#22533D">
+                            Enlaces oficiales
+                        </font>
+                    </h3>
+
+                    <ul>
+                        <li>
+                            <a href="https://www.thebeatles.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Sitio oficial de The Beatles
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.youtube.com/@TheBeatles"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Canal de YouTube
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Escuchar en Spotify
+                            </a>
+                        </li>
+                    </ul>
+
+                </aside>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="12" bgcolor="#193A2B" align="center">
+
+                <footer>
+
+                    <font color="#F3EAD1">
+                        <h2>Arquitectura Web - 2026</h2>
+                        <p>Alza Bartolo Piero</p>
+                        <p>Proyecto académico sobre The Beatles</p>
+                    </font>
+
+                    <p>
+                        <a href="#arriba">
+                            <font color="#E8752F">
+                                Volver arriba
+                            </font>
+                        </a>
+                    </p>
+
+                </footer>
+
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
